@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CarritoViewController">
+   <children>
+      <TableView fx:id="tbvCarrito" layoutX="25.0" layoutY="27.0" prefHeight="200.0" prefWidth="306.0">
+        <columns>
+          <TableColumn fx:id="colNombre" prefWidth="99.20001602172852" text="Nombre" />
+          <TableColumn fx:id="colCantidad" prefWidth="103.20001220703125" text="Cantidad" />
+            <TableColumn fx:id="colPrecio" prefWidth="103.99992370605469" text="Precio" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnConfirmar" layoutX="121.0" layoutY="277.0" mnemonicParsing="false" onAction="#confirmar" text="Confirmar Compra" />
+      <Label fx:id="lblPrecioTotal" layoutX="102.0" layoutY="234.0" prefHeight="18.0" prefWidth="152.0" />
+   </children>
+</AnchorPane>
